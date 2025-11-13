@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veer Portfolio</title>
+
+    <!-- Tailwind Play CDN - quick & simple (development use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Optional: configure Tailwind via CDN (extend colors if you like)
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyancustom: '#00E0FF',
+              purplecustom: '#A259FF',
+            },
+            backgroundImage: {
+              'radial-top-right': 'radial-gradient(ellipse at top right,#071427,#000814)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
